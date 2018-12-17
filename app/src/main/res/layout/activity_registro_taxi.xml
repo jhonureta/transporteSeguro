@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_registro_taxi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+
+    tools:context="com.example.personal.transporteseguro.registroTaxi">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="DATOS DEL CONDUCTOR"
+                android:gravity="center"
+                android:onClick="siguiente"
+
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@android:color/background_dark" />
+
+
+            <ImageView
+                android:id="@+id/imgFoto"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/taxiss"
+                android:layout_gravity="center"
+                android:background="@drawable/cerclebackgroundgreen"
+                android:layout_below="@+id/linearLayout"
+                android:layout_centerHorizontal="true" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+
+
+                    <EditText
+                        android:id="@+id/txt_nombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:padding="5dp"
+
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ "
+                        android:hint="Nombre"
+                        android:inputType="textPersonName" />
+
+
+
+                    <EditText
+                        android:id="@+id/txt_apellido"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp"
+                        android:hint="Apellido"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ "
+                        android:inputType="textPersonName" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="4"
+                        android:layout_gravity="center"
+                        >
+
+                        <Button
+                            android:id="@+id/btn_fecha"
+
+                            android:layout_width="0dp"
+                            android:layout_weight="3"
+                            android:layout_height="wrap_content"
+                            android:text="SELEC. FECHA NACIMIENTO"
+                            />
+
+                        <TextView
+                        android:id="@+id/txt_fecha"
+                        android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
+                        android:layout_height="match_parent"
+
+                        android:textSize="13dp"
+                            android:layout_gravity="center"
+                        android:text="10/11/2018"
+
+
+
+                        android:textColor="@android:color/background_dark"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:src="@drawable/calendar"
+                        android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txt_edad"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:text="20 años"
+
+                    android:textSize="20dp"
+
+                    android:padding="5dp"
+                    android:background="#fff"
+
+                    android:inputType="textEmailAddress"/></LinearLayout>
+
+
+
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp"
+                        />
+
+
+
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/experiencia"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:maxLength="2"
+
+                        android:layout_marginTop="10dp"
+
+                        android:hint="Experiencia"
+
+                        />
+
+                <EditText
+                    android:id="@+id/txt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+
+                    android:padding="5dp"
+
+                    android:hint="Correo"
+                    android:inputType="textEmailAddress"/>
+
+                <EditText
+                        android:id="@+id/txt_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:maxLength="30"
+                        android:layout_marginTop="10dp"
+
+                        android:padding="5dp"
+
+                        android:hint="Clave"
+                        android:inputType="textPassword"/>
+
+
+
+
+                    <EditText
+                        android:id="@+id/txt_celular"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp"
+                        android:maxLength="10"
+                        android:inputType="number"
+                        android:hint="Celular"
+                        />
+
+                    <Spinner
+                        android:id="@+id/spinner2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp"
+
+
+                        />
+
+
+
+                    <EditText
+                        android:id="@+id/txt_telefono"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:padding="5dp"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:layout_marginTop="10dp"
+                        android:hint="Teléfono fijo"
+
+                        />
+
+
+
+
+                    <Spinner
+                        android:id="@+id/spinner3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp"
+
+                        />
+
+
+
+                <Button
+                    android:id="@+id/btnRegistrar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SIGUIENTE"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/gris"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ruta"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

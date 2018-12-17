@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_regitro2_taxi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+
+
+    tools:context="com.example.personal.transporteseguro.regitro2_taxi">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+
+        android:layout_margin="10dp"
+        android:layout_marginTop="25dp">
+
+
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="CURSOS REALIZADOS:"
+          android:textSize="20dp"
+            android:textColor="@android:color/background_dark"
+            android:id="@+id/textView4" />
+
+        <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seguridad Industrial"
+                android:id="@+id/curso1"
+                />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seguridad Fisica"
+            android:id="@+id/curso2"
+            />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Servicio al Cliente"
+            android:id="@+id/curso3"
+            />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manejo defensivo"
+            android:id="@+id/curso4"
+            />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manejo Ofensivo"
+            android:id="@+id/curso5"
+            />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_margin="10dp"
+
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ANTECEDENTES:"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20dp"
+            android:id="@+id/textView2" />
+        <CheckBox
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Si"
+            android:id="@+id/antecedente_si" />
+
+
+
+        <CheckBox
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/antecedente_no" />
+
+  </android.support.design.widget.TextInputLayout>
+
+
+        <EditText
+            android:id="@+id/txt_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:background="#fff"
+
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ,."
+            android:hint="Explica que antecedentes tienes.."
+            android:inputType="textPersonName" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIGUIENTE"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/gris"
+            android:textColor="@android:color/white"
+            android:id="@+id/btnRegistroCursos"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

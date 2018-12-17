@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/icon"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INFORMACIÓN"
+        android:textSize="22dp"
+        android:fontFamily="serif"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Nombre: Jhon Ureta"
+
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:id="@+id/nombre" />
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:id="@+id/cedula"
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+
+        android:text="Cedua: 2300681448"
+       android:textAlignment="center"
+        android:textStyle="normal|bold"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:id="@+id/telefono"
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+
+
+        android:text="Telefono: 0960799906"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:id="@+id/direccion"
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+
+
+        android:text="Direccion: Coop:Libre Ecuador"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INFORMACIÓN DEL TAXI"
+        android:textSize="22dp"
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+
+        android:fontFamily="serif"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+     />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:id="@+id/color"
+
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+
+        android:text="Color: Azul marino"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:id="@+id/placa"
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+
+
+        android:text="Placa: 24934040"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:id="@+id/clase"
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+
+
+        android:text="Clase: Auto"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:id="@+id/marca"
+
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+
+        android:text="Marca: Aveo 2001"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        />-->
+</LinearLayout>

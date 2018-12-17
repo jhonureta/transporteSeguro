@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_menu_taxista"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+    tools:context="com.example.personal.transporteseguro.menuTaxista">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MENU CONDUCTOR"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="center"
+                    android:textSize="25dp"
+                    android:textColor="@android:color/background_dark" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"
+                android:layout_margin="20dp"
+                android:layout_marginTop="-10dp"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="true"
+                android:weightSum="4"
+                android:orientation="horizontal"
+
+                >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/taxialdo"
+                    android:id="@+id/carreras"
+                    android:layout_weight="2"
+
+                    />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/mantenimiento"
+                    android:src="@drawable/herramienta"
+                    android:layout_weight="2"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Carreras"
+                    android:layout_weight="2"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark"
+                    />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mantenimiento"
+                    android:layout_weight="2"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+
+                >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/botonrojo"
+                    android:layout_weight="2"
+                    android:id="@+id/auxilio" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/reportes"
+                    android:id="@+id/reportes"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Botón Pánico"
+                    android:textAlignment="center"
+                    android:layout_weight="2"
+                    android:textColor="@android:color/background_dark"
+                    />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Reportes"
+                    android:layout_weight="2"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark"
+                    android:id="@+id/textView3" />
+
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"
+                android:layout_margin="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cerrar"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/cerrar"
+
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimaryDark" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
